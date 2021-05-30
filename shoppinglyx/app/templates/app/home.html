@@ -46,7 +46,7 @@
 {% block main-content %}
 <!-- 1st Product Slider -->
 <div class="m-3">
- <h2>ShoppinglyX Buttom Wears</h2>
+ <h2>ShoppingX Buttom Wears</h2>
  <!-- Slider 1 -->
  <div class="owl-carousel" id="slider1">
   {% for b in buttomwears %}
@@ -99,7 +99,7 @@
 
 <!-- 2nd Product Slider -->
 <div class="mx-3">
- <h2>ShoppinglyX T-Shirts</h2>
+ <h2>ShoppingX T-Shirts</h2>
  <!-- Slider 2 -->
  <div class="owl-carousel" id="slider2">
     {% for tp in topwears %}
@@ -117,7 +117,7 @@
 
 <!-- 3nd Product Slider -->
 <div class="mx-3">
- <h2>ShoppingliX Mobiles</h2>
+ <h2>ShoppingX Mobiles</h2>
  <!-- Slider 3 -->
  <div class="owl-carousel" id="slider3">
     {% for m in mobiles %}
@@ -132,5 +132,23 @@
  </div>
 </div>
 <!-- End 3nd Product Slider -->
+
+<!-- 4nd Product Slider -->
+<div class="mx-3">
+ <h2>ShoppingX Laptops</h2>
+ <!-- Slider 4 -->
+ <div class="owl-carousel" id="slider4">
+    {% for l in laptops %}
+    <a href="{% url 'product-detail' l.id %}" class="btn">
+      <div class="item">
+        <img src="{{l.product_image.url}}" alt="" height="200px">
+        <span class="fw-bold">{{l.title}}</span><br>
+        <span class="fs-5">Rs. {{l.discounted_price}}</span>
+      </div>
+    </a>
+  {% endfor %}
+ </div>
+</div>
+<!-- End 4nd Product Slider -->
 {% endblock main-content %}
 
