@@ -1,3 +1,3 @@
 # ShoppingX
 
-# This is a E-Commerce product webiste
+# This is a E-Commerce product website
